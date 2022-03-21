@@ -40,7 +40,8 @@ https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clik
 
 
 ## エスケープ
-「<」は「&lt;」、「>」を「&gt;」に変換する。
+「<」は「```&lt;```」、「>」を「```&gt;```」に変換する。  
+例：```<h1>``` → ```&lt;h1&gt;```
 
 ## CDNの利用
 JsDelivrからCDN利用可能
