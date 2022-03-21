@@ -21,3 +21,6 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 site_name: My Docs
 
 ```
+
+## GitHub Pages URL
+https://watsony.github.io/create-asset/MkDocs/site-default
