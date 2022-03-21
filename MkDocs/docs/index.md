@@ -23,4 +23,4 @@ site_name: My Docs
 ```
 
 ## GitHub Pages URL
-https://watsony.github.io/create-asset/MkDocs/site-default
+[https://watsony.github.io/create-asset/MkDocs/site-default](https://watsony.github.io/create-asset/MkDocs/site-default)
