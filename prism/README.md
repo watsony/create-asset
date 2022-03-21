@@ -104,6 +104,8 @@ HTMLエスケープツール: https://webtools.dounokouno.com/htmlescape/
 Qiita Prism.js 使ってみた: https://qiita.com/taqumo/items/825c862517ba9d8567a  
 与太郎の備忘録: https://yotarandum.net/prismjs/  
 
+My GitHub Code: https://github.com/watsony/create-asset/tree/main/prism  
+
 My GitHub Pages サンプルサイト：  
 https://watsony.github.io/create-asset/prism  
 https://watsony.github.io/create-asset/prism/index-simple.html  
