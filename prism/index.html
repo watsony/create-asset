@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/prism.css">
+    <script src="js/prism.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello PRISM!</h1>
+
+    <p>
+        <a href="https://prismjs.com" target="_blank" rel="noopener noreferrer">PRISM</a>
+        はエディタのようなビジュアルでコードをWeb表示するためのデザインテンプレート。
+        CSSとJSを<a href="https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript" target="_blank" rel="noopener noreferrer">ダウンロード</a>
+        、もしくはCDNで利用可能。
+    </p>
+    
+
+    <h2>■ PRISMの表示例</h2>
+    <pre>
+        <code class="language-html">
+            &lt;h1&gt;Hello PRISM!&lt;/h1&gt;
+        </code>
+    </pre>
+
+    <h2>■ サンプルコード</h2>
+    <pre class="line-numbers">
+        <code class="language-html">
+            
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;ja&quot;&gt;
+            &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot;&gt;
+            
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;css/prism.css&quot;&gt;
+                &lt;script src=&quot;js/prism.js&quot;&gt;&lt;/script&gt;
+            
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Prism Template Code&lt;/h1&gt;
+                &lt;pre class=&quot;line-numbers&quot;&gt;
+                    &lt;code class=&quot;language-html&quot;&gt;
+                        &amp;lt;h1&amp;gt;Hello PRISM!&amp;lt;/h1&amp;gt;
+                    &lt;/code&gt;
+                &lt;/pre&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+
+        </code>
+    </pre>
+
+    <a href="https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+git+markup-templating+php+python+yaml&plugins=line-highlight+line-numbers+remove-initial-line-feed+command-line+unescaped-markup+normalize-whitespace+toolbar+copy-to-clipboard+treeview" target="_blank" rel="noopener noreferrer">この設定のダウンロードリンク</a>
+    
+    
+    <!-- 基本型 -->
+    <h2>■ 基本型</h2>
+    <h3>表示例</h3>
+    <pre>
+        <code class="language-none">
+            最もシンプルなコード表示設定
+        </code>
+    </pre>
+
+    <h3>コード</h3>
+    <pre>
+        <code class="language-html">
+            
+            &lt;pre&gt;
+                &lt;code class=&quot;language-none&quot;&gt;
+                    最もシンプルなコード表示設定
+                &lt;/code&gt;
+            &lt;/pre&gt;
+
+        </code>
+    </pre>
+
+    <h3>言語設定</h3>
+
+    <p><code class="language-html">&lt;code&gt;</code>に<code class="language-html">class=""</code>としてプログラム言語を設定</p>
+    <code class="language-none">language-none</code>
+    <code class="language-none">language-shell</code>
+    <code class="language-none">language-html</code>
+    <code class="language-none">language-css</code>
+    <code class="language-none">language-js</code>
+    <code class="language-none">language-php</code>
+    <code class="language-none">language-python</code>
+    <code class="language-none">language-git</code>
+    <code class="language-none">language-yaml</code>
+
+
+    <!-- Line Highlight -->
+    <h2>■ Line Highlight</h2>
+
+    <p>任意の行を強調表示する</p>
+
+    <h3>表示例</h3>
+    <pre data-line="1">
+        <code class="language-html">
+            ハイライトあり
+            ハイライトなし
+        </code>
+    </pre>
+
+    <h3>コード</h3>
+    <pre>
+        <code class="language-html">
+            &lt;pre data-line=&quot;1&quot;&gt;
+                &lt;code class=&quot;language-html&quot;&gt;
+                    ハイライトあり
+                    ハイライトなし
+                &lt;/code&gt;
+            &lt;/pre&gt;
+        </code>
+    </pre>
+
+    <h3>方法</h3>
+
+    <p><code class="language-html">&lt;pre&gt;</code>に<code class="language-html">data-line=""</code>としてハイライトする行を指定</p>
+    <code class="language-none">1</code>
+    <code class="language-none">1, 3</code>
+    <code class="language-none">1, 3-5</code>
+
+    <p>【PRISM公式ガイド】Line Highlight:
+        <a href="https://prismjs.com/plugins/line-highlight/" target="_blank" rel="noopener noreferrer">https://prismjs.com/plugins/line-highlight/</a>
+    </p>
+
+    <!-- Line Numbers -->
+    <h2>■ Line Numbers</h2>
+
+    <p>行番号を左側に表示する</p>
+    
+    <h3>表示例</h3>
+    <pre class="line-numbers">
+        <code class="language-html">
+            行番号表示1
+            行番号表示2
+        </code>
+    </pre>
+
+    <h3>コード</h3>
+    <pre class="line-numbers">
+        <code class="language-html">
+            &lt;pre class=&quot;line-numbers&quot;&gt;
+                &lt;code class=&quot;language-html&quot;&gt;
+                    行番号表示1
+                    行番号表示2
+                &lt;/code&gt;
+            &lt;/pre&gt;
+        </code>
+    </pre>
+
+    <h3>方法</h3>
+
+    <p><code class="language-html">&lt;pre&gt;</code>のclassに<code class="language-html">line-numbers</code>を指定</p>
+
+    <p>【PRISM】Line Numbers:
+        <a href="https://prismjs.com/plugins/line-numbers/" target="_blank" rel="noopener noreferrer">https://prismjs.com/plugins/line-numbers/</a>
+    </p>
+
+
+    <!-- コマンドライン -->
+
+    <h2>■ Command Line</h2>
+
+    <p>コマンドライン表示する</p>
+
+    <h3>① 表示例. デフォルト</h3>
+
+    <pre class="command-line">
+        <code class="language-shell">
+            cd
+            ls -a
+        </code>
+    </pre>
+
+    <h3>① コード. デフォルト</h3>
+
+    <pre class="line-numbers">
+        <code class="language-html">
+            &lt;pre class=&quot;command-line&quot;&gt;
+                &lt;code class=&quot;language-shell&quot;&gt;
+                    cd
+                    ls -a
+                &lt;/code&gt;
+            &lt;/pre&gt;
+        </code>
+    </pre>
+
+
+    <h3>② 表示例. プロンプト変更・実行結果表示</h3>
+
+    <pre class="command-line" data-user="root" data-host="127.0.0.1" data-output="2">
+        <code class="language-shell">
+            ls -a
+            .ssh .venv
+            source ~/.venv/myenv/bin/activate
+        </code>
+    </pre>
+
+    <h3>② コード. プロンプト変更・実行結果表示</h3>
+
+    <pre class="line-numbers">
+        <code class="language-html">
+            &lt;pre class=&quot;command-line&quot; data-user=&quot;root&quot; data-host=&quot;127.0.0.1&quot; data-output=&quot;2&quot;&gt;
+                &lt;code class=&quot;language-shell&quot;&gt;
+                    ls -a
+                    .ssh .venv
+                    source ~/.venv/myenv/bin/activate
+                &lt;/code&gt;
+            &lt;/pre&gt;
+        </code>
+    </pre>
+
+
+    <h3>③ 表示例. プロンプト変更</h3>
+
+    <pre class="command-line" data-prompt="(myenv) C:\Users\watson>">
+        <code class="language-shell">
+            pip install mkdocs
+        </code>
+    </pre>
+
+    <h3>③ コード. プロンプト変更</h3>
+
+    <pre class="line-numbers">
+        <code class="language-html">
+            &lt;pre class=&quot;command-line&quot; data-prompt=&quot;(myenv) C:\Users\watson&gt;&quot;&gt;
+                &lt;code class=&quot;language-shell&quot;&gt;
+                    pip install mkdocs
+                &lt;/code&gt;
+            &lt;/pre&gt;
+        </code>
+    </pre>
+
+    <p>【PRISM】Command Line:
+        <a href="https://prismjs.com/plugins/command-line/" target="_blank" rel="noopener noreferrer">https://prismjs.com/plugins/command-line/</a>
+    </p>
+
+    <!-- Treeview -->
+
+    <h2>■ Treeview</h2>
+
+    <p>ツリー構造で表示する</p>
+
+    <p>【PRISM】Treeview:
+        <a href="https://prismjs.com/plugins/treeview/" target="_blank" rel="noopener noreferrer">https://prismjs.com/plugins/treeview/</a>
+    </p>
+
+</body>
+</html>
